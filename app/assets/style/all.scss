@@ -181,6 +181,23 @@ $spacers: (
   font-weight: bold;
 }
 
+.title{
+  font-size: 3rem;
+  text-align: center;
+  
+  margin-bottom: 2.5rem;
+  
+  @include pad{
+    font-size: 1.75em;
+    margin-bottom: 2rem;
+  }
+  
+  @include mobile{
+    margin-bottom: 1.25rem;
+  }
+
+}
+
 /* spacer */
 .mb-2{
   margin-bottom: 8px;
@@ -881,3 +898,99 @@ $spacers: (
     font-size: 0.875rem;
   }
 }
+
+/* contact */
+
+.bg__contact{
+  background-color: $lightPink;
+}
+
+form{
+  text-align: center;
+}
+
+.contact{
+  max-width: 730px;
+
+
+  p{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+
+    @include pad{
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    @include mobile{
+      margin-bottom: 0.5rem;
+    }
+  }
+
+
+  &__list{
+    text-align: left;
+
+    margin-bottom: 2.5rem;
+
+    @include pad{
+      margin-bottom: 1.25rem;
+    }
+
+
+    li{
+      margin-bottom: 1rem;
+
+      @include pad{
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__label{
+    display: block;
+    margin-bottom: 0.25rem;
+
+    @include pad{
+      font-size: 0.875em;
+    }
+      
+  }
+
+  &__input{
+    width: 100%;
+    padding: 12px 16px;
+
+    background-color: transparent;
+    border: 1px solid #000;
+
+    @include pad{
+      padding: 8px 12px;
+    }
+    
+  }
+    
+  
+
+ 
+}
+
+.form__comment{
+  height: 136px;
+
+
+  @include pad{
+    height: 100px;
+  }
+
+}
+
+
+.form__submit{
+  border: 0;
+  background-color:$mainRed;
+  color: $white;
+  width: 48%;
+  line-height: 54px;
+
+}
+
