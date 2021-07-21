@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Roboto, "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* mac, IOS 系統字體 設計稿中文字體 設計稿英文字體  Windows 英文系統字  微軟正黑體 Android 系統字  IOS 系統字  通用字體 */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* variables */
+/* color */
+/* spacer 參考用 */
+/* mixin */
+/* breakpoints */
+/* util */
+.container {
+  max-width: 1140px;
+  /* 1110+30 */
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    /* 690+30 */
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    /* 345+30 */
+  }
+}
+
+/* color */
+.white {
+  color: #fff;
+}
+
+.primary {
+  color: #AA0601;
+}
+
+.secondary {
+  color: #650300;
+}
+
+.bg-primary {
+  background-color: #AA0601;
+}
+
+.bg-third {
+  background-color: #FBF2F2;
+}
+
+/* spacer */
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.5rem;
+}
+
+.pl-3 {
+  padding-left: 1rem;
+}
+
+.pr-3 {
+  padding-right: 1rem;
+}
+
+.pl-5 {
+  padding-left: 1.5rem;
+}
+
+.pr-5 {
+  padding-right: 1.5rem;
+}
+
+.pl-7 {
+  padding-left: 2rem;
+}
+
+.pr-7 {
+  padding-right: 2rem;
+}
+
+.pr-10 {
+  padding-right: 3rem;
+}
+
+/* spacer RWD */
+@media (max-width: 768px) {
+  .mb-md-3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pl-md-0 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pr-md-5 {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pr-md-9 {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .pl-sm-0 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pr-sm-0 {
+    padding-right: 0;
+  }
+}
+
+/* layout */
+/* header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 15px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    padding: 10px 164px;
+  }
+}
+
+.logo a {
+  display: block;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80px;
+  height: 48px;
+}
+
+@media (max-width: 767px) {
+  .logo a {
+    width: 48px;
+    height: 29px;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 1px solid #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu li {
+    width: 50%;
+    border: 1px solid #fff;
+  }
+}
+
+.menu a {
+  display: block;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .menu a {
+    text-align: center;
+    padding: 8px 54px;
+  }
+}
+
+/* footer */
+.footer {
+  padding-top: 32px;
+  padding-bottom: 40px;
+  /* mobile 顯示 */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 24px auto;
+  }
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer__header {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    display: none;
+  }
+}
+
+.footer__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__media a {
+  display: block;
+}
+
+.footer__media img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 768px) {
+  .footer__media img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__content {
+    display: none;
+  }
+}
+
+.footer__content img {
+  width: 48px;
+  height: 48px;
+  margin-right: 22px;
+}
+
+@media (max-width: 768px) {
+  .footer__content img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+.footer__content a {
+  font-size: 2.25rem;
+  line-height: 48px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .footer__content a {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+}
+
+.footer__sm__content {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .footer__sm__content {
+    display: block;
+  }
+}
+
+.footer__sm__content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.footer__sm__content a {
+  line-height: 20px;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+  .footer__copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__copyright p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.footer__copyright__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .footer__copyright__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__copyright__list li {
+    margin-bottom: 8px;
+  }
+}
+/*# sourceMappingURL=all.css.map */

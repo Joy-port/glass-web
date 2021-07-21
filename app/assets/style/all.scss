@@ -1,23 +1,476 @@
-$color: #00cc99;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+ text-decoration: none;
+}
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align:middle;
+}
+*, *::before, *::after{
+   box-sizing: border-box;
 }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+/* base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Roboto, "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* mac, IOS 系統字體 設計稿中文字體 設計稿英文字體  Windows 英文系統字  微軟正黑體 Android 系統字  IOS 系統字  通用字體 */
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+a{
+  &:hover{
+    opacity: 0.7;
   }
+}
+/* variables */
+/* color */
+$white:#fff;
+$lightPink:#FBF2F2;
+$orange:#B75929;
+$mainRed:#AA0601;
+
+$darkRed:#650300;
+
+$black:#000;
+$mainBlack:#111619;
+
+$gray:#707070;
+
+/* spacer 參考用 */
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.25, /* 20 */
+  5: $spacer * 1.5, /* 24 */
+  6: $spacer * 1.875, /* 30 */
+  7: $spacer * 2, /* 32 */
+  8: $spacer * 2.25, /* 36 */        
+  9: $spacer * 2.5, /* 40 */
+  10: $spacer * 3, /* 48 */
+  11: $spacer * 3.75, /* 60 */
+  12: $spacer * 4 /* 64 */          
+);
+
+
+
+
+/* mixin */
+/* breakpoints */
+
+@mixin pad{
+  @media (max-width: 768px) {
+    @content;
+    
+  }
+}
+@mixin mobile{
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+
+
+/* util */
+
+.container{
+  max-width: 1140px; /* 1110+30 */
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include pad{
+    max-width: 720px; /* 690+30 */
+    
+  }
+
+  @include mobile{
+    max-width: 375px;/* 345+30 */
+  }
+}
+
+/* color */
+.white{
+  color: #fff;
+}
+
+.primary{
+  color: $mainRed;
+}
+.secondary{
+  color: $darkRed;
+}
+
+.bg-primary{
+  background-color: $mainRed;
+}
+.bg-third{
+  background-color: $lightPink;
+}
+
+/* spacer */
+.mb-2{
+  margin-bottom: 8px;
+}
+.mb-3{
+  margin-bottom: 1rem;
+}
+.mb-5{
+  margin-bottom: 1.5rem;
+}
+
+.pl-3{
+  padding-left: 1rem;
+}
+
+.pr-3{
+  padding-right: 1rem;
+}
+
+.pl-5{
+  padding-left: 1.5rem;
+}
+.pr-5{
+  padding-right: 1.5rem;
+}
+
+.pl-7{
+  padding-left: 2rem;
+}
+.pr-7{
+  padding-right: 2rem;
+}
+.pr-10{
+  padding-right: 3rem;
+}
+
+
+/* spacer RWD */
+.mb-md-3{
+  @include pad{
+    margin-bottom: 1rem;
+  }
+}
+.pl-md-0{
+  @include pad{
+    padding-left: 0;
+  }
+}
+
+.pr-md-5 {
+  @include pad{
+    padding-right: 1.5rem;
+  }
+
+}
+
+.pr-md-9{
+  @include pad{
+    padding-right: 2.5rem;
+  }
+}
+
+
+.pl-sm-0{
+  @include mobile{
+    padding-left: 0;
+  }
+}
+.pr-sm-0{
+  @include mobile{
+    padding-right: 0;
+  }
+}
+
+
+
+/* layout */
+
+/* header */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 15px;
+
+  @include mobile{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.logo{
+    @include mobile{   
+        padding: 10px 164px;
+  
+        
+      }
+
+  a{
+    display: block;
+
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 80px;
+    height: 48px;
+
+    @include mobile{
+      width: 48px;
+      height: 29px;
+      
+    }
+  }
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  
+  @include mobile{
+    flex-wrap: wrap;
+
+    border: 1px solid $white;
+    
+  }
+
+  li{
+
+    @include mobile{
+      width: 50%;
+      border: 1px solid $white;
+    }
+  }
+
+  a{
+    display: block;
+
+    font-size: 1.25rem;
+
+    @include mobile{
+      text-align: center;
+      padding: 8px 54px;
+    }
+  }
+}
+
+/* footer */
+
+.footer{
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  @include pad{
+    padding-bottom: 20px;
+  }
+  @include mobile{
+    padding: 24px auto;
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include mobile{
+      align-items: start;
+    }
+  }
+
+  &__menu{
+    display: flex;
+
+    @include mobile{
+      display: none;
+    }
+
+  }
+
+  &__media{
+    display: flex;
+
+    a{
+      display: block;
+     
+    }
+    
+    img {
+      width: 48px;
+      height: 48px;
+      
+       @include pad{
+        width: 24px;
+        height: 24px;
+
+      }
+      
+    }
+  }
+
+  &__content{
+
+    @include mobile{
+      display: none;
+    }
+
+    
+    img{
+      width: 48px;
+      height: 48px;
+      
+      margin-right: 22px;
+      
+      @include pad{
+        width: 24px;
+        height: 24px;
+        
+        margin-right: 8px;
+      }
+      
+    }
+
+    a{
+      font-size: 2.25rem;
+      line-height: 48px;
+      vertical-align: middle;
+      
+      @include pad{
+        font-size: 1.25rem;
+        line-height: 24px;
+      }
+    }
+
+
+  }
+  /* mobile 顯示 */
+  &__sm__content{
+    display: none;
+
+    @include mobile{
+      display: block;
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
+
+        margin-right: 6px;
+      }
+    a{
+      line-height: 20px;
+    }
+  }
+
+  &__copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 24px;
+    border-top: 1px solid $white;
+
+    @include mobile{
+     flex-direction: column;
+     align-items: start;
+     
+     padding-top: 16px;
+
+    }
+
+    p{
+      @include mobile{
+        font-size: 14px;
+
+        margin-bottom: 8px;
+      }
+    }
+
+    &__list{
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 14px;
+
+      @include mobile{
+        flex-direction: column;
+        padding-left: 0;
+        
+      }
+
+      li{
+        @include mobile{
+          margin-bottom: 8px;
+        }
+      }
+
+    }
+
+  }
+
+
+
 }
