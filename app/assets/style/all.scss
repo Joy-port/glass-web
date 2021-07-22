@@ -1,11 +1,13 @@
-@import "reset";
+@import "base/reset";
 @import "variables";
 @import "mixin";
-@import "base";
+@import "base/base";
 @import "util";
 
-@import "layout";
+@import "layout/header";
+@import "layout/footer";
 
 @import "pages/index";
 @import "pages/store";
+@import "pages/map";
 
