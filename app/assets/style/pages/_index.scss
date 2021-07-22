@@ -98,7 +98,7 @@
       max-width: 100%; /*255-345*/
     }
 
-    /*未載入fontawesome cdn 無法改粗細*/
+    /*未載入fontawesome cdn 無法改粗細 -> 發現是link順序問題，已調整*/
     img {
       width: 83px;
       height: 83px;
@@ -107,6 +107,10 @@
     h4 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
+    }
+
+    p{
+      text-align: left;
     }
   }
 }

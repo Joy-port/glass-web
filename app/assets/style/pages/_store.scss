@@ -23,15 +23,17 @@
   label {
     margin-right: 1rem;
 
+
     @include mobile {
       font-size: 0.875rem;
     }
   }
+  /* 樣式 */
   &__place {
     font-size: 1.125rem;
     color: #495057;
 
-    width: 324px;
+    width: 30%;
     height: 45px;
     line-height: 45px;
 
@@ -45,10 +47,15 @@
       line-height: 2.25rem;
     }
   }
-
+  /* 文字 */
   &__words {
+
+    font: 1.125rem;
     @include pad {
       font-size: 1rem;
+    }
+    @include mobile{
+      font-size: 0.875rem;
     }
   }
 }
