@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>store location</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -15,7 +16,7 @@
       <h1 class="logo"><a href="#"></a></h1>
       <ul class="menu">
         <li><a href="#" class="white pl-7 pr-7">系列鏡框</a></li>
-        <li><a href="#" class="white pl-7 pr-7">門市據點</a></li>
+        <li><a href="store.html" class="white pl-7 pr-7">門市據點</a></li>
         <li><a href="#" class="white pl-7 pr-7">部落格</a></li>
         <li><a href="#" class="white pl-7">常見問題</a></li>
       </ul>
@@ -23,20 +24,148 @@
   </nav>
 
   
+<!-- 門市據點 排版  -->
+<!-- 選擇地區 -->
 <section>
-    <div class="container">
-        <div class="location">
-            <h2 class="fw-bold">門市據點</h2>
-            <div class="location__select">
-                <label for="place" class="text-m me-3">選擇地區</label>
-                <select class="select__place ms-1" id="place" name="place" aria-label="select place">
-                    <option selected name="place">台北市</option>
-                    <option value="新北市">新北市</option>
-                    <option value="台中市">台中市</option>
-                    <option value="台南市">台南市</option>
-                </select>
-            </div>
+  <div class="container container-tab">
+    <h2 class="store tab__title fw-bold">門市據點</h2>
+    <div class="select mb-4">
+      <label for="select__place" class="text-m">選擇地區</label>
+      <select
+        class="select__place"
+        id="select__place"
+        aria-label="select place"
+      >
+        <option selected>台北市</option>
+        <option value="台北市">新北市</option>
+        <option value="台中市">台中市</option>
+        <option value="台南市">台南市</option>
+      </select>
+    </div>
+    <ul class="store__lists">
+      <li class="store__card mb-4">
+        <div class="store__card__img store__img__1"></div>
+        <div class="store__card__title bg-white text-m">台北中山旗艦店</div>
 
+        <ul class="store__card__content text-s text-md-xs">
+          <li>
+            <i class="fas fa-phone-alt mr-2"></i>
+            <p>
+              電話：<a href="tel:+(02)000-1234" class="text-reset"
+                >(02)000-1234</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="far fa-clock mr-2"></i>
+            <p>營業時間: 10:00-21:00</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <p>地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+        <a href="#" class="more__info__btn">詳細資訊</a>
+      </li>
+      <li class="store__card mb-4">
+        <div class="store__card__img store__img__2"></div>
+        <div class="store__card__title bg-white text-m">台北中山旗艦店</div>
+
+        <ul class="store__card__content text-s text-md-xs">
+          <li>
+            <i class="fas fa-phone-alt mr-2"></i>
+            <p>
+              電話：<a href="tel:+(02)000-1234" class="text-reset"
+                >(02)000-1234</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="far fa-clock mr-2"></i>
+            <p>營業時間: 10:00-21:00</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <p>地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+        <a href="#" class="more__info__btn">詳細資訊</a>
+      </li>
+      <li class="store__card mb-4">
+        <div class="store__card__img store__img__3"></div>
+        <div class="store__card__title bg-white text-m">台北中山旗艦店</div>
+
+        <ul class="store__card__content text-s text-md-xs">
+          <li>
+            <i class="fas fa-phone-alt mr-2"></i>
+            <p>
+              電話：<a href="tel:+(02)000-1234" class="text-reset"
+                >(02)000-1234</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="far fa-clock mr-2"></i>
+            <p>營業時間: 10:00-21:00</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <p>地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+        <a href="#" class="more__info__btn">詳細資訊</a>
+      </li>
+      <li class="store__card mb-4">
+        <div class="store__card__img store__img__4"></div>
+        <div class="store__card__title bg-white text-m">台北中山旗艦店</div>
+
+        <ul class="store__card__content text-s text-md-xs">
+          <li>
+            <i class="fas fa-phone-alt mr-2"></i>
+            <p>
+              電話：<a href="tel:+(02)000-1234" class="text-reset"
+                >(02)000-1234</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="far fa-clock mr-2"></i>
+            <p>營業時間: 10:00-21:00</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <p>地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+        <a href="#" class="more__info__btn">詳細資訊</a>
+      </li>
+      <li class="store__card mb-4">
+        <div class="store__card__img store__img__5"></div>
+        <div class="store__card__title bg-white text-m">台北中山旗艦店</div>
+
+        <ul class="store__card__content text-s text-md-xs">
+          <li>
+            <i class="fas fa-phone-alt mr-2"></i>
+            <p>
+              電話：<a href="tel:+(02)000-1234" class="text-reset"
+                >(02)000-1234</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="far fa-clock mr-2"></i>
+            <p>營業時間: 10:00-21:00</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <p>地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+        <a href="#" class="more__info__btn">詳細資訊</a>
+      </li>
+    </ul>
+  </div>
+</section>
 
 
   <footer class="bg-primary">
@@ -46,7 +175,7 @@
         <ul class="footer__menu">
           <li><a href="#" class="white pr-7 pr-md-9">首頁</a></li>
           <li><a href="#" class="white pl-7 pr-7 pr-md-9 pl-md-0">系列鏡框</a></li>
-          <li><a href="#" class="white pl-7 pr-7 pr-md-9 pl-md-0">門市據點</a></li>
+          <li><a href="store.html" class="white pl-7 pr-7 pr-md-9 pl-md-0">門市據點</a></li>
           <li><a href="#" class="white pl-7 pr-7 pr-md-9 pl-md-0">部落格</a></li>
           <li><a href="#" class="white pl-7 pl-md-0">常見問題</a></li>
         </ul>
