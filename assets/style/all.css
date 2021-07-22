@@ -231,7 +231,6 @@ a:hover {
   .pr-sm-0 {
     padding-right: 0; } }
 
-/* layout */
 /* header */
 .header {
   display: -webkit-box;
@@ -507,7 +506,7 @@ a:hover {
   /*255*/
   margin: 0 auto;
   text-align: center;
-  /*未載入fontawesome cdn 無法改粗細*/ }
+  /*未載入fontawesome cdn 無法改粗細 -> 發現是link順序問題，已調整*/ }
   @media (max-width: 768px) {
     .service__card {
       max-width: 330px;
@@ -525,6 +524,8 @@ a:hover {
   .service__card h4 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem; }
+  .service__card p {
+    text-align: left; }
 
 /*classic */
 .classic h3 {
