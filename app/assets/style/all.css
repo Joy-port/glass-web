@@ -709,7 +709,7 @@ a:hover {
   /*255*/
   margin: 0 auto;
   text-align: center;
-  /*未載入fontawesome cdn 無法改粗細 -> 發現是link順序問題，已調整*/
+  /*未載入font awesome cdn 無法改粗細 -> 發現是link順序問題，已調整*/
 }
 
 @media (max-width: 800px) {
@@ -1457,5 +1457,240 @@ form {
   .pad__display {
     display: none;
   }
+}
+
+.product__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__menu {
+  width: 33.33%;
+  border: 1px solid #DCDCDC;
+  /* 排版 */
+}
+
+.product__menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96px;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.product__menu a:hover {
+  border-bottom: 4px solid #aa0601;
+  padding-bottom: -4px;
+}
+
+@media (max-width: 800px) {
+  .product__menu a {
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__menu a {
+    height: 30px;
+    font-size: 0.875em;
+  }
+}
+
+.product__menu img {
+  width: 44px;
+  height: 44px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .product__menu img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__menu img {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+  }
+}
+
+.product__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__banner img {
+  width: 50%;
+  height: 304px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 767px) {
+  .product__banner img {
+    height: 148px;
+  }
+}
+
+.product__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .product__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__title {
+    margin-bottom: 20px;
+  }
+}
+
+.product__title__eng {
+  font-size: 2.625rem;
+}
+
+@media (max-width: 800px) {
+  .product__title__eng {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__title__eng {
+    font-size: 1.25rem;
+  }
+}
+
+.product__title__ch {
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .product__title__ch {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__title__ch {
+    font-size: 1rem;
+  }
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__content {
+  width: 23%;
+  margin-bottom: 6.5rem;
+}
+
+@media (max-width: 800px) {
+  .product__content {
+    width: 47.8%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.product__content img {
+  width: 100%;
+  height: 164px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .product__content img {
+    height: 166px;
+  }
+}
+
+.product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .product__price {
+    font-size: 1rem;
+  }
+}
+
+.product__price span {
+  color: #aa0601;
+  font-weight: 600;
+}
+
+.product__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color__choise {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .color__choise {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+  }
+}
+
+.color__1 {
+  background-color: #5F3E2D;
+}
+
+.color__2 {
+  background-color: #B75929;
 }
 /*# sourceMappingURL=all.css.map */
