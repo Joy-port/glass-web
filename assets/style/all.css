@@ -123,14 +123,14 @@ a:hover {
 
 .title {
   font-size: 3rem;
-  text-align: center;
-  margin-bottom: 2.5rem; }
+  text-align: center; }
   @media (max-width: 768px) {
     .title {
-      font-size: 1.75em;
+      font-size: 2rem;
       margin-bottom: 2rem; } }
   @media (max-width: 767px) {
     .title {
+      font-size: 1.25rem;
       margin-bottom: 1.25rem; } }
 
 /* spacer */
@@ -486,17 +486,7 @@ a:hover {
 
 /*classic */
 .classic h3 {
-  margin-bottom: 2.5rem;
-  font-size: 3rem;
-  text-align: center; }
-  @media (max-width: 768px) {
-    .classic h3 {
-      margin-bottom: 2rem;
-      font-size: 2rem; } }
-  @media (max-width: 767px) {
-    .classic h3 {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem; } }
+  margin-bottom: 2.5rem; }
 
 .classic__card a {
   display: -webkit-box;
@@ -508,6 +498,8 @@ a:hover {
       margin-bottom: 0.5rem; } }
   @media (max-width: 767px) {
     .classic__card a {
+      display: block;
+      max-width: 100%;
       position: relative; } }
 
 .classic__card img {
@@ -515,7 +507,8 @@ a:hover {
   margin-right: 30px; }
   @media (max-width: 767px) {
     .classic__card img {
-      max-width: 100%; } }
+      max-width: 100%;
+      height: auto; } }
 
 .classic__card__title {
   display: -webkit-box;
@@ -583,16 +576,7 @@ a:hover {
   background-position: center center; }
 
 .feature h3 {
-  font-size: 3rem;
-  text-align: center;
   margin-bottom: 2.5rem; }
-  @media (max-width: 768px) {
-    .feature h3 {
-      font-size: 1.75em;
-      margin-bottom: 2rem; } }
-  @media (max-width: 767px) {
-    .feature h3 {
-      margin-bottom: 1.25rem; } }
 
 .feature__list {
   display: -webkit-box;
@@ -631,16 +615,7 @@ a:hover {
 
 /*recommend*/
 .recommend h3 {
-  font-size: 3rem;
-  text-align: center;
   margin-bottom: 2.5rem; }
-  @media (max-width: 768px) {
-    .recommend h3 {
-      font-size: 1.75em;
-      margin-bottom: 2rem; } }
-  @media (max-width: 767px) {
-    .recommend h3 {
-      margin-bottom: 1.25rem; } }
 
 .recommend__list {
   display: -webkit-box;
