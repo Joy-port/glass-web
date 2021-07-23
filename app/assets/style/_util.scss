@@ -64,11 +64,26 @@
   background-color: $lightPink;
 }
 
+/*  分頁副標題 */
+
+.callout-secondary {
+  border-left: 0.5rem solid #9f1213;
+  padding-left: 1rem;
+  @include mobile {
+    padding-left: 0.5rem;
+  }
+}
+
 /*font*/
 .fw-bold {
   font-weight: bold;
 }
 
+.fw-sm-nobold{
+  @include mobile{
+    font-weight: normal;
+  }
+}
 /* index home page font*/
 .title {
   font-size: 3rem;
@@ -85,7 +100,6 @@
     margin-bottom: 1.25rem;
   }
 }
-
 /* tab pages font */
 .tab__title{                /* 64px */
   font-size: 3rem;

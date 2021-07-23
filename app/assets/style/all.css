@@ -167,9 +167,27 @@ a:hover {
   background-color: #fbf2f2;
 }
 
+/*  分頁副標題 */
+.callout-secondary {
+  border-left: 0.5rem solid #9f1213;
+  padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .callout-secondary {
+    padding-left: 0.5rem;
+  }
+}
+
 /*font*/
 .fw-bold {
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .fw-sm-nobold {
+    font-weight: normal;
+  }
 }
 
 /* index home page font*/
@@ -1399,18 +1417,6 @@ form {
   line-height: 54px;
 }
 
-/*  門市據點 標題 */
-.store {
-  border-left: 0.5rem solid #9f1213;
-  padding-left: 1rem;
-}
-
-@media (max-width: 767px) {
-  .store {
-    padding-left: 0.5rem;
-  }
-}
-
 /* 選單樣式 */
 .select {
   margin-bottom: 2rem;
@@ -1764,6 +1770,72 @@ form {
   .sunglasses__content {
     width: 100%;
     margin-bottom: 2rem;
+  }
+}
+
+.faq__title {
+  margin-top: 3.75rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .faq__title {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq__title {
+    margin-top: 1.5rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+}
+
+.faq__list {
+  margin-top: 2.25rem;
+}
+
+@media (max-width: 800px) {
+  .faq__list {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq__list {
+    margin-top: 1.5rem;
+  }
+}
+
+.faq__content h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .faq__content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.faq__content p {
+  margin-bottom: 2rem;
+  padding-left: 8.5%;
+}
+
+@media (max-width: 800px) {
+  .faq__content p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq__content p {
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=all.css.map */
