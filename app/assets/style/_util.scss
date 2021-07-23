@@ -60,6 +60,9 @@
 .bg-primary {
   background-color: $mainRed;
 }
+.bg-secondary{
+  background-color: $darkRed;
+}
 .bg-third {
   background-color: $lightPink;
 }
@@ -203,5 +206,14 @@
 .pr-sm-0 {
   @include mobile {
     padding-right: 0;
+  }
+}
+
+
+/* 不顯示 */
+
+.sm-no-display{
+  @include mobile{
+    display: none;
   }
 }

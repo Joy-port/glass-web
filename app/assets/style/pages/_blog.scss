@@ -1,0 +1,29 @@
+.blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu{
+        display: flex;
+    }
+    &__catagories{
+        a{
+            display: block;
+         
+        }
+    }
+}
+
+.search{
+    a{
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    img{
+        width: 29px;
+        height: 29px;
+
+    }
+}
+
