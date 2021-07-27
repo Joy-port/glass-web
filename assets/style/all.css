@@ -259,6 +259,26 @@ a:hover {
     padding-right: 0; } }
 
 /* 不顯示 */
+.lg-no-display {
+  display: none; }
+
+@media (max-width: 992px) {
+  .md-no-display {
+    display: none; } }
+
+/* display */
+.lg-display {
+  display: block; }
+
+@media (max-width: 992px) {
+  .md-display {
+    display: block; } }
+
+@media (max-width: 767px) {
+   
+.sm-display {
+    display: block; } }
+
 @media (max-width: 767px) {
   .sm-no-display {
     display: none; } }
@@ -518,6 +538,9 @@ a:hover {
   .menu a {
     display: block;
     font-size: 1.25rem; }
+    .menu a:hover {
+      text-shadow: rgba(255, 255, 255, 0.1) -1.5px -1.5px 1px, rgba(0, 0, 0, 0.75) 1px 1px 1px;
+      opacity: 1; }
     @media (max-width: 767px) {
       .menu a {
         text-align: center;
@@ -556,6 +579,9 @@ a:hover {
     @media (max-width: 767px) {
       .footer__menu {
         display: none; } }
+    .footer__menu a:hover {
+      text-shadow: rgba(255, 255, 255, 0.1) -1.5px -1.5px 1px, rgba(0, 0, 0, 0.75) 1px 1px 1px;
+      opacity: 1; }
   .footer__media {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1508,7 +1534,7 @@ form {
   padding-bottom: 160px; }
   @media (max-width: 992px) {
     .article {
-      padding-bottom: 96px; } }
+      padding-bottom: 0px; } }
   @media (max-width: 767px) {
     .article {
       padding-bottom: 56px; } }
@@ -1585,6 +1611,21 @@ form {
         margin-bottom: 10px; } }
     .article__share p {
       margin-right: 20px; }
+  @media (max-width: 992px) {
+    .article__footer {
+      display: none; } }
+  @media (max-width: 767px) {
+    .article__footer {
+      display: block; } }
+  .article__footer__md {
+    display: none; }
+    @media (max-width: 992px) {
+      .article__footer__md {
+        display: block;
+        margin-bottom: 96px; } }
+    @media (max-width: 767px) {
+      .article__footer__md {
+        display: none; } }
 
 /* 文章照片 */
 .post {
@@ -1597,7 +1638,11 @@ form {
   margin-bottom: 24px; }
   @media (max-width: 992px) {
     .post {
+      height: 292px;
       margin-bottom: 16px; } }
+  @media (max-width: 767px) {
+    .post {
+      height: 225px; } }
 
 .share__list {
   display: -webkit-box;
