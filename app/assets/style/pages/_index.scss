@@ -259,6 +259,8 @@
       transform: translate(-50%, -50%);
 
       font-size: 4.5rem;
+      white-space: nowrap; /*讓文字不要換行*/
+      
 
       @include pad {
         font-size: 2rem;
@@ -283,8 +285,12 @@
     }
   }
 
-  &__card {
+  &__card {   
     width: 22%;
+
+    /* 讓內容自適應延伸 父 flex 子 grow */
+    display: flex;
+    flex-direction: column;
 
     @include pad {
       width: 47%;
@@ -345,6 +351,11 @@
   -moz-box-shadow: 0px 3px 3.5px #00000029;
   -webkit-box-shadow: 0px 3px 3.5px #00000029;
   box-shadow: 0px 2px 3.5px #00000029;
+
+  /* 讓內容自適應延伸 父 flex 子 grow */
+  /* 找出最高的內容高度為 168 -144 */
+  flex-grow: 1; /* succeed */
+
 
   p {
     color: #212529;
