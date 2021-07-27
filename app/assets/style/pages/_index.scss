@@ -109,7 +109,7 @@
       margin-bottom: 0.5rem;
     }
 
-    p{
+    p {
       text-align: left;
     }
   }
@@ -120,7 +120,6 @@
 .classic {
   h3 {
     margin-bottom: 2.5rem;
-
   }
 
   &__card {
@@ -177,7 +176,7 @@
           font-size: 1.75rem;
         }
 
-        @include mobile{
+        @include mobile {
           font-size: 1rem;
         }
       }
@@ -222,9 +221,7 @@
 
 .feature {
   h3 {
-
     margin-bottom: 2.5rem;
-
   }
   &__list {
     display: flex;
@@ -260,7 +257,6 @@
 
       font-size: 4.5rem;
       white-space: nowrap; /*讓文字不要換行*/
-      
 
       @include pad {
         font-size: 2rem;
@@ -285,7 +281,7 @@
     }
   }
 
-  &__card {   
+  &__card {
     width: 22%;
 
     /* 讓內容自適應延伸 父 flex 子 grow */
@@ -355,7 +351,6 @@
   /* 讓內容自適應延伸 父 flex 子 grow */
   /* 找出最高的內容高度為 168 -144 */
   flex-grow: 1; /* succeed */
-
 
   p {
     color: #212529;

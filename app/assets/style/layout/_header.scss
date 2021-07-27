@@ -69,11 +69,15 @@
 
     font-size: 1.25rem;
 
+    &:hover {
+      text-shadow: rgba(255, 255, 255, 0.1) -1.5px -1.5px 1px,
+        rgba(0, 0, 0, 0.75) 1px 1px 1px;
+      opacity: 1;
+    }
+
     @include mobile {
       text-align: center;
       padding: 8px 54px;
     }
   }
 }
-
-

@@ -30,16 +30,16 @@
   }
 }
 
-.container-tab{
+.container-tab {
   padding-top: 96px;
-  padding-bottom: 160px; 
+  padding-bottom: 160px;
 
-  @include pad{
+  @include pad {
     padding-top: 60px;
     padding-bottom: 96px;
   }
 
-  @include mobile{
+  @include mobile {
     padding-top: 28px;
     padding-bottom: 56px;
   }
@@ -60,7 +60,7 @@
 .bg-primary {
   background-color: $mainRed;
 }
-.bg-secondary{
+.bg-secondary {
   background-color: $darkRed;
 }
 .bg-third {
@@ -82,8 +82,8 @@
   font-weight: bold;
 }
 
-.fw-sm-nobold{
-  @include mobile{
+.fw-sm-nobold {
+  @include mobile {
     font-weight: normal;
   }
 }
@@ -104,39 +104,35 @@
   }
 }
 /* tab pages font */
-.tab__title{                /* 64px */
+.tab__title {
+  /* 64px */
   font-size: 3rem;
   line-height: 1.66;
   margin-bottom: 3.75rem;
 
-  @include mobile{
+  @include mobile {
     font-size: 1.75rem;
   }
 }
 
-.text-xs{
-  font-size: 0.875rem; /* 14px */ 
+.text-xs {
+  font-size: 0.875rem; /* 14px */
 }
 
-.text-s{
+.text-s {
   font-size: 1.25rem; /* 20px */
-  @include pad{
-      font-size: 1rem;
+  @include pad {
+    font-size: 1rem;
   }
-
 }
 
-.text-m{
+.text-m {
   font-size: 1.5rem; /* 24px */
-  @include pad{
-      font-size: 1rem;
-      line-height: 1.8;
+  @include pad {
+    font-size: 1rem;
+    line-height: 1.8;
   }
-
 }
-
-
-
 
 /* spacer */
 .mb-2 {
@@ -148,7 +144,7 @@
 .mb-5 {
   margin-bottom: 1.5rem;
 }
-.mb-7{
+.mb-7 {
   margin-bottom: 2rem;
 }
 .pl-3 {
@@ -182,14 +178,14 @@
     margin-bottom: 1rem;
   }
 }
-.mb-md-7{
-  @include pad{
+.mb-md-7 {
+  @include pad {
     margin-bottom: 2rem;
   }
 }
 
-.mb-sm-3{
-  @include mobile{
+.mb-sm-3 {
+  @include mobile {
     margin-bottom: 1rem;
   }
 }
@@ -222,11 +218,40 @@
   }
 }
 
+/* 不顯示 */
+.lg-no-display{
+  display: none;
+}
 
+.md-no-display{
+  @include pad{
+    display: none;
+  }
+}
+
+
+/* display */
+.lg-display{
+  display: block;
+}
+
+.md-display{
+  @include pad{
+    display: block;
+  }
+}
+ 
 /* 不顯示 */
 
-.sm-no-display{
-  @include mobile{
+.sm-display {
+  @include mobile {
+    display: block;
+  }
+}
+
+
+.sm-no-display {
+  @include mobile {
     display: none;
   }
 }

@@ -44,7 +44,7 @@ $breadcrumb-divider: quote("/");
   flex-wrap: wrap;
   padding-bottom: 160px;
   @include pad {
-    padding-bottom: 96px;
+    padding-bottom: 0px;
   }
   @include mobile {
     padding-bottom: 56px;
@@ -140,6 +140,26 @@ $breadcrumb-divider: quote("/");
       margin-right: 20px;
     }
   }
+  &__footer{
+
+    @include pad{
+        display: none;
+    }
+    @include mobile{
+        display: block;
+    }
+
+        &__md{
+            display: none;
+        @include pad{
+            display: block;
+            margin-bottom: 96px;
+        }
+        @include mobile{
+            display: none;
+        }
+    }
+  }
 }
 
 /* 文章照片 */
@@ -152,7 +172,13 @@ $breadcrumb-divider: quote("/");
   margin-bottom: 24px;
 
   @include pad {
+    height: 292px;
     margin-bottom: 16px;
+  }
+
+  @include mobile{
+      height: 225px;
+ 
   }
 }
 
