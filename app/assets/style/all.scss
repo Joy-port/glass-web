@@ -1,9 +1,11 @@
-@import "base/reset";
 @import "variables";
 @import "mixin";
+@import "base/reset";
 @import "base/base";
 @import "util";
-@import "components";
+
+@import "components/pagination";
+@import "components/products";
 
 @import "layout/header";
 @import "layout/footer";
