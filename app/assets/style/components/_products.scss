@@ -7,8 +7,8 @@
     }
   
     &__menu {
-      width: 33.33%;
-      border: 1px solid $lightGray;
+      width: 33.3333%;
+      /* border: 1px solid $gray-200; */
   
       /* 排版 */
       a {
@@ -17,12 +17,10 @@
         align-items: center;
         height: 96px;
   
-        color: #000;
         font-size: 2rem;
-        font-weight: 600;
   
         &:hover {
-          border-bottom: 4px solid $mainRed;
+          border-bottom: 4px solid $primary;
           padding-bottom: -4px;
         }
   
@@ -139,10 +137,7 @@
       font-size: 1rem;
     }
 
-    span {
-      color: $mainRed;
-      font-weight: 600;
-    }
+
   }
 
   &__color {
@@ -169,10 +164,10 @@
     }
 
     &__1{
-        background-color: #5F3E2D;
+        background-color: $org-800;
     }
     &__2{
-        background-color: #B75929;
+        background-color: $org-300;
     }
 }
 

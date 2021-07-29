@@ -18,14 +18,11 @@ $breadcrumb-divider: quote("/");
     a {
       /* 讓元素併攏  不需要變成區塊元素*/
       /* display: block; */
-      color: #000;
       font-size: 1rem;
     }
   }
 
-  &__active {
-    color: $mainRed;
-  }
+
 }
 
 /* breadcrumb slash */
@@ -57,13 +54,11 @@ $breadcrumb-divider: quote("/");
     &__link {
       display: block;
       font-size: 1.5rem;
-      font-weight: 700;
-      color: $mainRed;
       /* tags hover button */
       &:hover {
         display: inline-block;
-        background-color: $mainRed;
-        color: #fff;
+        background-color: $primary;
+        color: $white;
         border-radius: 5px;
         opacity: 1;
         margin-bottom: -8px;
@@ -73,7 +68,7 @@ $breadcrumb-divider: quote("/");
 
   &__body {
     width: 74%;
-    margin-bottom: 24px;
+    margin-bottom: 24px; 
 
     @include mobile {
       width: 100%;
@@ -89,7 +84,7 @@ $breadcrumb-divider: quote("/");
     @include mobile {
       font-size: 1.25rem;
       line-height: 1.5;
-      color: $darkRed;
+      color: $danger;
     }
   }
 
@@ -114,7 +109,7 @@ $breadcrumb-divider: quote("/");
     }
 
     span {
-      color: $gray-400;
+
       @include pad {
         font-size: 0.875rem;
         line-height: 1.7;
@@ -131,7 +126,6 @@ $breadcrumb-divider: quote("/");
     }
 
     p {
-      color: $gray-700;
       opacity: 0.6;
     }
   }
@@ -254,15 +248,13 @@ $breadcrumb-divider: quote("/");
   }
   &__content {
     a {
-      color: $mainRed;
-      font-weight: 700;
       font-size: 1.5rem;
 
       /* tags hover button */
       &:hover {
         display: inline-block;
-        background-color: $mainRed;
-        color: #fff;
+        background-color: $primary;
+        color: $white;
         border-radius: 5px;
         opacity: 1;
         margin-bottom: -8px;
