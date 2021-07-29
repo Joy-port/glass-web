@@ -1,28 +1,7 @@
-/* breadcrumb 分隔符號 */
-$breadcrumb-divider: quote("/");
-
-.blog {
-  &__breadcrumb {
-    padding-top: 0.5rem;
-  }
-}
-
 .breadcrumb {
   &__container {
     display: flex;
   }
-
-  &__content {
-    margin-right: 0.5rem;
-
-    a {
-      /* 讓元素併攏  不需要變成區塊元素*/
-      /* display: block; */
-      font-size: 1rem;
-    }
-  }
-
-
 }
 
 /* breadcrumb slash */
@@ -46,14 +25,13 @@ $breadcrumb-divider: quote("/");
   @include mobile {
     padding-bottom: 56px;
   }
+  
   &__tags {
     display: flex;
-    li {
-      margin-right: 0.5rem;
-    }
+
     &__link {
       display: block;
-      font-size: 1.5rem;
+
       /* tags hover button */
       &:hover {
         display: inline-block;
@@ -68,80 +46,29 @@ $breadcrumb-divider: quote("/");
 
   &__body {
     width: 74%;
-    margin-bottom: 24px; 
 
     @include mobile {
       width: 100%;
     }
   }
 
-  &__title {
-    font-size: 3rem;
-    line-height: 95px;
-    @include pad {
-      font-size: 2rem;
-    }
-    @include mobile {
-      font-size: 1.25rem;
-      line-height: 1.5;
-      color: $danger;
-    }
-  }
+
 
   &__subtitle {
     display: flex;
     justify-content: space-between;
-
-    margin-bottom: 24px;
-
-    @include mobile {
-      margin-bottom: 20px;
-    }
-    h3 {
-      font-size: 1.75rem;
-      @include pad {
-        font-size: 1rem;
-        line-height: 42px;
-      }
-      @include mobile {
-        font-size: 0.875rem;
-      }
-    }
-
-    span {
-
-      @include pad {
-        font-size: 0.875rem;
-        line-height: 1.7;
-      }
-    }
+    align-items: center;
   }
 
-  &__content {
-    margin-bottom: 40px;
-    @include pad {
-      margin-bottom: 24px;
-    }
-    @include mobile {
-    }
-
-    p {
-      opacity: 0.6;
-    }
-  }
 
   &__share {
     display: flex;
-    padding-bottom: 20px;
     border-bottom: 1px solid $gray-300;
 
     @include mobile {
       margin-bottom: 10px;
     }
 
-    p {
-      margin-right: 20px;
-    }
   }
   &__footer {
     @include pad {
@@ -155,7 +82,6 @@ $breadcrumb-divider: quote("/");
       display: none;
       @include pad {
         display: block;
-        margin-bottom: 96px;
       }
       @include mobile {
         display: none;
@@ -171,11 +97,10 @@ $breadcrumb-divider: quote("/");
   object-fit: cover;
   object-position: center;
 
-  margin-bottom: 24px;
 
   @include pad {
     height: 292px;
-    margin-bottom: 16px;
+
   }
 
   @include mobile {
@@ -190,10 +115,10 @@ $breadcrumb-divider: quote("/");
 
   &__icon {
     display: block;
-    margin-right: 16px;
   }
 }
 
+//component
 .article {
   &__pagination {
     display: flex;
@@ -205,17 +130,14 @@ $breadcrumb-divider: quote("/");
     }
 
     i {
-      font-size: 1rem;
       line-height: 30px;
-      margin-right: 1rem;
+    
     }
   }
 
   &__link {
     display: flex;
-    font-size: 1rem;
     line-height: 30px;
-    color: #000;
   }
 }
 
@@ -238,32 +160,26 @@ $breadcrumb-divider: quote("/");
       }
     }
     h4 {
-      font-size: 1.75rem;
 
       @include pad {
-        font-size: 1.25rem;
         line-height: 42px;
       }
     }
   }
   &__content {
     a {
-      font-size: 1.5rem;
-
-      /* tags hover button */
+      /* tags hover button component */
       &:hover {
         display: inline-block;
         background-color: $primary;
         color: $white;
         border-radius: 5px;
         opacity: 1;
-        margin-bottom: -8px;
       }
 
       @include pad {
-        font-size: 1rem;
         line-height: 2.25;
-        margin-bottom: -8px;
+       /*  margin-bottom: -8px; */
       }
     }
   }

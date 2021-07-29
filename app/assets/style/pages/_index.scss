@@ -24,28 +24,6 @@
   justify-content: center;
 
   height: calc(100vh - 108px);
-
-  p {
-    font-size: 2.25rem;
-
-    @include pad {
-      font-size: 1.25rem;
-    }
-    @include mobile {
-      font-size: 1rem;
-    }
-  }
-
-  h2 {
-    font-size: 4rem;
-
-    @include pad {
-      font-size: 3rem;
-    }
-    @include mobile {
-      font-size: 2rem;
-    }
-  }
 }
 
 
@@ -53,21 +31,8 @@
 
 .service {
   h3 {
-    margin-bottom: 3rem;
-
-    font-size: 3rem;
     text-align: center;
 
-    @include pad {
-      margin-bottom: 2.5rem;
-
-      font-size: 2rem;
-    }
-    @include mobile {
-      margin-bottom: 1.75rem;
-
-      font-size: 1.5rem;
-    }
   }
 
   &__list {
@@ -88,8 +53,6 @@
       max-width: 330px; /*255->330*/
       padding-left: 45px;
       padding-right: 45px;
-
-      margin-bottom: 2rem;
     }
     @include mobile {
       max-width: 100%; /*255-345*/
@@ -97,12 +60,8 @@
 
     /*未載入font awesome cdn 無法改粗細 -> 發現是link順序問題，已調整*/
     img {
-      @include size(83px,83px);
-    }
-
-    h4 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      width: 83px;
+      height: 83px;
     }
 
     p {
@@ -114,26 +73,16 @@
 /*classic */
 
 .classic {
-  h3 {
-    margin-bottom: 2.5rem;
-  }
-
   &__card {
     a {
       display: flex;
-      margin-bottom: 2rem;
-
-      @include pad {
-        margin-bottom: 0.5rem;
-      }
+  
       @include mobile {
         position: relative;
       }
     }
     img {
       max-width: 57%;
-
-      margin-right: 30px;
 
       @include mobile {
         max-width: 100%;
@@ -163,16 +112,12 @@
           height: 37px;
         }
       }
+
+
       p {
-        font-size: 3rem;
         font-style: italic;
-
-        @include pad {
-          font-size: 1.75rem;
-        }
-
-        @include mobile {
-          font-size: 1rem;
+        @include pad{
+          line-height: 37px;
         }
       }
     }
@@ -187,17 +132,16 @@
       }
     }
     img {
-      margin-right: 0;
+      /* margin-right: 0; */
 
       @include pad {
-        margin-right: 30px;
+       /*  margin-right: 30px; */
         margin-left: 0;
       }
     }
 
     p {
       margin-left: 10px;
-      margin-right: 30px;
 
       @include pad {
         margin-left: -20px;
@@ -206,18 +150,16 @@
   }
 }
 
-/*features*/
-.bg__feature {
+/*cobrands*/
+.bg__cobrand {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.feature {
-  h3 {
-    margin-bottom: 2.5rem;
-  }
+.cobrand {
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -233,7 +175,6 @@
     @include mobile {
       max-width: 100%;
 
-      margin-bottom: 1rem;
     }
     a {
       display: block;
@@ -249,23 +190,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      font-size: 4.5rem;
       white-space: nowrap; /*讓文字不要換行*/
 
-      @include pad {
-        font-size: 2rem;
-      }
     }
   }
 }
 
 /*recommend*/
+//components!
 .recommend {
-  h3 {
-    margin-bottom: 2.5rem;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
@@ -299,6 +232,7 @@
   height: 256px;
   object-fit: cover;
   object-position: center;
+
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
  
@@ -306,7 +240,6 @@
 
 
 .card__content {
-  padding: 1rem;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 
@@ -318,12 +251,7 @@
   /* 找出最高的內容高度為 168 -144 */
   flex-grow: 1; /* succeed */
 
-  p {
-    margin-bottom: 8px;
-  }
-  time {
-    font-size: 0.875rem;
-  }
+
 }
 
 /* contact */
@@ -336,53 +264,20 @@ form {
 .contact {
   max-width: 730px;
 
-  p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-
-    @include pad {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    @include mobile {
-      margin-bottom: 0.5rem;
-    }
-  }
 
   &__list {
     text-align: left;
 
-    margin-bottom: 2.5rem;
-
-    @include pad {
-      margin-bottom: 1.25rem;
-    }
-
-    li {
-      margin-bottom: 1rem;
-
-      @include pad {
-        margin-bottom: 0.5rem;
-      }
-    }
+ 
   }
   &__label {
     display: block;
-    margin-bottom: 0.25rem;
 
-    @include pad {
-      font-size: 0.875em;
-    }
   }
 
   &__input {
     width: 100%;
-    padding: 12px 16px;
 
-    @include pad {
-      padding: 8px 12px;
-    }
   }
 }
 

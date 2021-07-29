@@ -1,0 +1,37 @@
+//util-colors
+//background-color
+@each $key, $value in $theme-colors{
+    .bg-#{$key}{
+      background-color: $value;
+    }
+  }
+  
+  //text-color
+.text{
+  @each $key, $value in $theme-colors{
+    &-#{$key}{
+      color: $value;
+    }
+  }
+  @include mobile{
+    @each $key, $value in $theme-colors{
+      &-sm-#{$key}{
+        color: $value;
+      }
+    }
+  }
+}
+
+  @each $key, $value in $grays {
+    .text-#{$key}{
+      color: $value;
+    }
+    
+  }
+  
+  //border-color
+  @each $key, $value in $grays{
+    .bd-#{$key}{
+      border: 1px solid $value;
+    }
+  }

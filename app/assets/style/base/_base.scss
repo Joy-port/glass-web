@@ -15,6 +15,10 @@ a {
 }
 //取消 chrome 點選後會出現的藍色區塊
 input, textarea {
-  outline:none;
   background-color: transparent;
+
+  &:focus{
+    outline: none;
+  }
+
 }
