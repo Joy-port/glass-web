@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>sunglasses</title>
+    <title>store info</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,161 +49,92 @@
     </div>
 
     
-<!-- menu -->
-<nav>
-  <div class="container">
-    <ul class="product__list">
-      <li class="product__menu bd-200">
-        <a href="optical.html" class="fw-6 | fz-6 fz-md-8 fz-sm-12">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-diamond-black.svg"
-            alt="商品分類小圖示"
-          />
-          <h3>OPTICAL</h3>
-        </a>
-      </li>
-      <li class="product__menu bd-200">
-        <a href="sunglasses.html" class="fw-6 | fz-6 fz-md-8 fz-sm-12">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-sun-black.svg"
-            alt="商品分類小圖示"
-          />
-          <h3>SUNGLASSES</h3>
-        </a>
-      </li>
-      <li class="product__menu bd-200">
-        <a href="#" class="fw-6 | fz-6 fz-md-8 fz-sm-12">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder-black.svg"
-            alt="商品分類小圖示"
-          />
-          <h3>FUNCTIONAL</h3>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- sunglasses banner-->
+<!-- 門市據點 分店資訊 -->
 <section>
-  <div class="product__banner">
-    <img
-      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true"
-      alt="商品廣告圖"
-    />
-    <img
-      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true"
-      alt="商品廣告圖"
-    />
-  </div>
-
-  <!-- sunglass title -->
-
-  <div class="container container-section">
-    <!-- sunglass title -->
-    <div class="text-center mb-12 mb-md-10 mb-sm-6">
-      <h2 class="fz-42 fz-md-6 fz-sm-9">2020 NEW COLLECTION</h2>
-      <h2 class="fz-6 fz-md-8 fz-sm-11">賽璐珞鈦金屬混合鏡框</h2>
+  <div class="container container-tab">
+    <h2 class="tab__title callout-danger fw-7">門市據點</h2>
+    <div class="mb-10 mb-md-7 mb-sm-6">
+      <label for="select__store" class="mr-5 | text-m | fz-sm-12"
+        >選擇分店</label
+      >
+      <select
+        name=""
+        id="select__store"
+        class="select__place | pl-5 | text-100 fz-10 fz-md-11 fz-sm-12"
+      >
+        <option selected value="台北市中山旗艦店">台北中山旗艦店</option>
+        <option value="新北市">新北板橋分店</option>
+        <option value="台中市">台中車站分店</option>
+        <option value="台南市">台南安平分店</option>
+      </select>
     </div>
 
-    <ul class="product__list">
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
+    <div class="store__info">
+      <div class="info__card mb-10 mb-sm-5">
+        <!-- pc mobile display -->
         <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-4.png?raw=true"
-          alt="商品圖片"
+          class="info__card__img"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true"
+          alt="img store"
         />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
-        </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
+        <!-- pad display -->
         <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-3.png?raw=true"
-          alt="商品圖片"
+          class="info__card__pad"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true"
+          alt="img store"
         />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
+        <div class="info__card__body | bd-900">
+          <div
+            class="
+              pt-3
+              pb-3
+              pl-7
+              pr-7
+              |
+              pt-md-2
+              pb-md-2
+              pl-md-5
+              pr-md-5
+              |
+              pt-sm-2
+              pb-sm-2
+              pl-sm-7
+              pr-sm-7
+              |
+              text-m
+            "
+          >
+            台北中山旗艦店
+          </div>
+          <ul class="bd-t-900 | pt-5 pb-5 pl-7 pr-7 | text-s">
+            <li class="info__card__content">
+              <i class="text-center text-600 fas fa-phone-alt mr-2"></i>
+              <p>
+                電話：<a href="tel:+(02)000-1234" class="text-600"
+                  >(02)000-1234</a
+                >
+              </p>
+            </li>
+            <li class="info__card__content">
+              <i class="text-center text-600 far fa-clock mr-2"></i>
+              <p>營業時間: 10:00-21:00</p>
+            </li>
+            <li class="info__card__content">
+              <i class="text-center text-600 fas fa-map-marker-alt mr-2"></i>
+              <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+          </ul>
         </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
-        <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-2.png?raw=true"
-          alt="商品圖片"
-        />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
-        </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
-        <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-6.jpg?raw=true"
-          alt="商品圖片"
-        />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
-        </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
-        <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-11.jpg?raw=true"
-          alt="商品圖片"
-        />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
-        </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-      <li
-        class="product__content sunglasses__content | mb-19 mb-md-17 mb-sm-10"
-      >
-        <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/products-5.jpg?raw=true"
-          alt="商品圖片"
-        />
-        <div class="product__price | fz-8 fz-sm-11">
-          <p>bj41600s</p>
-          <span class="text-primary fw-6">NTD3,490</span>
-        </div>
-        <div class="product__color">
-          <a href="#" class="color__choice mr-2 mr-sm-1 bg-info"></a>
-          <a href="#" class="color__choice bg-warning"></a>
-        </div>
-      </li>
-    </ul>
+      </div>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636119825086!2d121.53568141498823!3d25.052271043712786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1627352772339!5m2!1szh-TW!2stw"
+        width="57%"
+        height="60%"
+        style="border: 0"
+        loading="lazy"
+      ></iframe>
+    </div>
   </div>
 </section>
 
