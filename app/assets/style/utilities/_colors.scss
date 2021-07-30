@@ -29,9 +29,18 @@
 }
 
 //border-color
-@each $key, $value in $grays {
-  .bd-#{$key} {
-    border: 1px solid $value;
+.bd{
+  @each $key, $value in $grays {
+    &-#{$key} {
+      border: 1px solid $value;
+    }
+  }
+  @include mobile{
+    @each $key, $value in $grays {
+      &-sm-#{$key} {
+        border: 1px solid $value;
+      }
+    }
   }
 }
 

@@ -3,7 +3,6 @@
 @import "base/reset";
 @import "base/base";
 @import "utilities/container";
-@import "utilities/spacing"; //之後要刪掉
 @import "utilities/colors";
 @import "utilities/typography";
 
@@ -12,8 +11,8 @@
 @import "components/pagination";
 @import "components/products";
 @import "components/breadcrumb";
+@import "components/navbar"; //要變成logo com.
 
-@import "layout/header";
 @import "layout/footer";
 
 @import "pages/index";

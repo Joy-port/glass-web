@@ -1,16 +1,5 @@
 /* footer */
-
 .footer {
-  padding-top: 32px;
-  padding-bottom: 40px;
-
-  @include pad {
-    padding-bottom: 20px;
-  }
-  @include mobile {
-    padding: 24px auto;
-  }
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -64,23 +53,18 @@
       width: 48px;
       height: 48px;
 
-      margin-right: 22px;
-
       @include pad {
         width: 24px;
         height: 24px;
 
-        margin-right: 8px;
       }
     }
 
     a {
-      font-size: 2.25rem;
       line-height: 48px;
       vertical-align: middle;
 
       @include pad {
-        font-size: 1.25rem;
         line-height: 24px;
       }
     }
@@ -96,8 +80,6 @@
     img {
       width: 20px;
       height: 20px;
-
-      margin-right: 6px;
     }
     a {
       line-height: 20px;
@@ -109,40 +91,20 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 24px;
-    border-top: 1px solid $white;
-
     @include mobile {
       flex-direction: column;
       align-items: start;
-
-      padding-top: 16px;
-    }
-
-    p {
-      @include mobile {
-        font-size: 14px;
-
-        margin-bottom: 8px;
-      }
     }
 
     &__list {
       display: flex;
       justify-content: space-between;
 
-      font-size: 14px;
-
       @include mobile {
         flex-direction: column;
-        padding-left: 0;
+    
       }
 
-      li {
-        @include mobile {
-          margin-bottom: 8px;
-        }
-      }
     }
   }
 }
