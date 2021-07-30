@@ -1,37 +1,66 @@
 //util-colors
 //background-color
-@each $key, $value in $theme-colors{
-    .bg-#{$key}{
-      background-color: $value;
-    }
+@each $key, $value in $theme-colors {
+  .bg-#{$key} {
+    background-color: $value;
   }
-  
-  //text-color
-.text{
-  @each $key, $value in $theme-colors{
-    &-#{$key}{
+}
+
+//text-color
+.text {
+  @each $key, $value in $theme-colors {
+    &-#{$key} {
       color: $value;
     }
   }
-  @include mobile{
-    @each $key, $value in $theme-colors{
-      &-sm-#{$key}{
+  @include mobile {
+    @each $key, $value in $theme-colors {
+      &-sm-#{$key} {
         color: $value;
       }
     }
   }
 }
 
-  @each $key, $value in $grays {
-    .text-#{$key}{
-      color: $value;
-    }
-    
+@each $key, $value in $grays {
+  .text-#{$key} {
+    color: $value;
   }
-  
-  //border-color
-  @each $key, $value in $grays{
-    .bd-#{$key}{
-      border: 1px solid $value;
+}
+
+//border-color
+@each $key, $value in $grays {
+  .bd-#{$key} {
+    border: 1px solid $value;
+  }
+}
+
+.bd {
+  @each $d-key, $d-value in $directions {
+    @if $d-key == "t" {
+      @each $key, $value in $grays {
+        &-#{$d-key}-#{$key} {
+          border-#{$d-value}: 1px solid $value;
+        }
+      }
+    } @else if $d-key == "r" {
+      @each $key, $value in $grays {
+        &-#{$d-key}-#{$key} {
+          border-#{$d-value}: 1px solid $value;
+        }
+      }
+    } @else if $d-key == "b" {
+      @each $key, $value in $grays {
+        &-#{$d-key}-#{$key} {
+          border-#{$d-value}: 1px solid $value;
+        }
+      }
+    } @else if $d-key == "l" {
+      @each $key, $value in $grays {
+        &-#{$d-key}-#{$key} {
+          border-#{$d-value}: 1px solid $value;
+        }
+      }
     }
   }
+}

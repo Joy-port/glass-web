@@ -16,9 +16,6 @@
         justify-content: center;
         align-items: center;
         height: 96px;
-  
-        font-size: 2rem;
-  
         &:hover {
           border-bottom: 4px solid $primary;
           padding-bottom: -4px;
@@ -26,12 +23,12 @@
   
         @include pad {
           height: 60px;
-          font-size: 1.5rem;
+        
         }
   
         @include mobile {
           height: 30px;
-          font-size: 0.875em;
+          
         }
       }
   
@@ -71,37 +68,8 @@
   .product {
     &__title {
       text-align: center;
-  
-      margin-bottom: 40px;
-  
-      @include pad {
-        margin-bottom: 32px;
-      }
-      @include mobile {
-        margin-bottom: 20px;
-      }
-  
-      &__eng {
-        font-size: 2.625rem;
-  
-        @include pad {
-          font-size: 2rem;
-        }
-        @include mobile {
-          font-size: 1.25rem;
-        }
-      }
-  
-      &__ch {
-        font-size: 2rem;
-        @include pad {
-          font-size: 1.5rem;
-        }
-        @include mobile {
-          font-size: 1rem;
-        }
-      }
     }
+    
   }
 
 
@@ -131,13 +99,6 @@
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.5rem;
-
-    @include mobile {
-      font-size: 1rem;
-    }
-
-
   }
 
   &__color {
@@ -152,22 +113,50 @@
         display: block;
         width: 24px;
         height: 24px;
-        margin-right: 0.5rem;
-
         border-radius: 4px;
 
         @include mobile{
             width: 16px;
             height: 16px;
-            margin-right: 0.25rem;
+          
         }
     }
 
-    &__1{
-        background-color: $org-800;
-    }
-    &__2{
-        background-color: $org-300;
-    }
+
+}
+
+/*optical content li*/
+
+.optical__content {
+  width: 23%; /* optical */
+ 
+  @include pad {
+    width: 47.8%;
+
+  }
+  @include mobile {
+    width: 100%;
+
+  }
+}
+
+/* sungalsses content li */
+
+.sunglasses__content{
+  width: 31.5%;
+ 
+
+  @include pad {
+    width: 47.8%;
+
+  
+  }
+  @include mobile {
+    width: 100%;
+
+
+  }
+
+
 }
 

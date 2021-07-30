@@ -1,6 +1,6 @@
 /* util */
 
-//container 
+//container
 .container {
   max-width: 1140px; /* 1110+30 */
   margin: 0 auto;
@@ -48,7 +48,7 @@
 
 /*  分頁副標題 */
 
-//callout
+//call out
 .callout-secondary {
   border-left: 0.5rem solid #9f1213;
   padding-left: 1rem;
@@ -105,39 +105,42 @@
 }
 
 /* faq */
-.pl-85{
+.pl-85 {
   padding-left: 8.5%;
 }
 
-
 /* opacity */
-.opacity-6{
+.opacity-6 {
   opacity: 0.6;
 }
 
+/* spacial font size product title */
+
+.fz-42 {
+  font-size: 2.625rem;
+}
+
 /* 不顯示 */
-.lg-no-display{
+.lg-no-display {
   display: none;
 }
 
-.md-no-display{
-  @include pad{
+.md-no-display {
+  @include pad {
     display: none;
   }
 }
 
-
 /* display */
-.lg-display{
+.lg-display {
   display: block;
 }
 
-.md-display{
-  @include pad{
+.md-display {
+  @include pad {
     display: block;
   }
 }
- 
 /* 不顯示 */
 
 .sm-display {
@@ -146,10 +149,8 @@
   }
 }
 
-
 .sm-no-display {
   @include mobile {
     display: none;
   }
 }
-

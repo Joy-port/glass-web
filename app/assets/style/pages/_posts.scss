@@ -18,13 +18,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 160px;
+ /*  padding-bottom: 160px;
   @include pad {
     padding-bottom: 0px;
   }
   @include mobile {
     padding-bottom: 56px;
-  }
+  } */
   
   &__tags {
     display: flex;
