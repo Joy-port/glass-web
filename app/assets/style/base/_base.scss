@@ -8,11 +8,25 @@ body {
   line-height: 1.5;
 }
 a {
-  color: $black;
+  color: $white;
+  text-decoration: none;
+
   &:hover {
     opacity: 0.7;
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 //取消 chrome 點選後會出現的藍色區塊
 input,
 textarea {

@@ -1,44 +1,41 @@
 //沒有用到
 
-//size 
-@mixin size($width, $height:$width){  //預設可以只填一個數字就是正方形
-    width: $width;
-    height: $width;
-  }   
-  
-  
-  //card img object-fit 功能
-  @mixin card-img($width:100%, $height:auto) {
-    width:$width; //100%
-    height:$height; // 特定寬度
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  
-  
-  // 待研究用途 
-  @mixin size($width, $height) {
+//size
+@mixin size($width, $height: $width) {
+  //預設可以只填一個數字就是正方形
+  width: $width;
+  height: $width;
+}
+
+//card img object-fit 功能
+@mixin card-img($width: 100%, $height: auto) {
+  width: $width; //100%
+  height: $height; // 特定寬度
+  object-fit: cover;
+  object-position: center;
+}
+
+// 待研究用途
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin before($width, $height) {
+  &::before {
+    content: "";
     width: $width;
     height: $height;
+    display: inline-block;
+
+    @content;
   }
-  
-  @mixin before($width,$height){
-    &::before {
-        content:'';
-        width: $width;
-        height: $height;
-        display: inline-block;
-        
-        @content;
-    }
+}
+
+/* link hover */
+@mixin link-hover {
+  transition: all 0.5s;
+  &:hover {
+    @content; //要加嗎？
   }
-  
-  /* link hover */
-  @mixin link-hover{ 
-    transition: all 0.5s;
-      &:hover{
-        @content; //要加嗎？
-      } 
-  } 
-  
+}

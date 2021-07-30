@@ -6,36 +6,14 @@
   }
 }
 
-//text-color
-.text {
-  @each $key, $value in $theme-colors {
-    &-#{$key} {
-      color: $value;
-    }
-  }
-  @include mobile {
-    @each $key, $value in $theme-colors {
-      &-sm-#{$key} {
-        color: $value;
-      }
-    }
-  }
-}
-
-@each $key, $value in $grays {
-  .text-#{$key} {
-    color: $value;
-  }
-}
-
 //border-color
-.bd{
+.bd {
   @each $key, $value in $grays {
     &-#{$key} {
       border: 1px solid $value;
     }
   }
-  @include mobile{
+  @include mobile {
     @each $key, $value in $grays {
       &-sm-#{$key} {
         border: 1px solid $value;
@@ -71,5 +49,14 @@
         }
       }
     }
+  }
+}
+
+//call out
+.callout-danger {
+  border-left: 0.5rem solid #9C2015;
+  padding-left: 1rem;
+  @include mobile {
+    padding-left: 0.5rem;
   }
 }

@@ -1,41 +1,6 @@
-.breadcrumb {
-  &__container {
-    display: flex;
-  }
-}
-
-/* breadcrumb slash */
-/* Add a slash symbol (/) before/behind each list item */
-.breadcrumb__container li + li:before {
-  padding: 0px;
-  color: black;
-  content: "/\00a0";
-}
-
 /* tags */
 
 .article {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
-  &__tags {
-    display: flex;
-
-    &__link {
-      display: block;
-
-      /* tags hover button */
-      &:hover {
-        display: inline-block;
-        background-color: $primary;
-        color: $white;
-        border-radius: 5px;
-        opacity: 1;
-        margin-bottom: -8px;
-      }
-    }
-  }
 
   &__body {
     width: 74%;
@@ -45,22 +10,10 @@
     }
   }
 
-
-
-  &__subtitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
   &__share {
-    display: flex;
-    
     @include mobile {
       margin-bottom: 10px;
     }
-
   }
   &__footer {
     @include pad {
@@ -89,10 +42,8 @@
   object-fit: cover;
   object-position: center;
 
-
   @include pad {
     height: 292px;
-
   }
 
   @include mobile {
@@ -101,78 +52,7 @@
 }
 
 .share {
-  &__list {
-    display: flex;
-  }
-
   &__icon {
     display: block;
-  }
-}
-
-//component
-.article {
-  &__pagination {
-    display: flex;
-    justify-content: space-between;
-
-    @include mobile {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    i {
-      line-height: 30px;
-    
-    }
-  }
-
-  &__link {
-    display: flex;
-    line-height: 30px;
-  }
-}
-
-.tags {
-  &__aside {
-    width: 22%;
-
-    @include mobile {
-      width: 100%;
-    }
-  }
-  &__header {
-    display: flex;
-
-    img {
-      width: 38px;
-
-      @include pad {
-        width: 19px;
-      }
-    }
-    h4 {
-
-      @include pad {
-        line-height: 42px;
-      }
-    }
-  }
-  &__content {
-    a {
-      /* tags hover button component */
-      &:hover {
-        display: inline-block;
-        background-color: $primary;
-        color: $white;
-        border-radius: 5px;
-        opacity: 1;
-      }
-
-      @include pad {
-        line-height: 2.25;
-       /*  margin-bottom: -8px; */
-      }
-    }
   }
 }
