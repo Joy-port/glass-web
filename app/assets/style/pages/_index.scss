@@ -1,5 +1,4 @@
 /*index page setting*/
-
 /*banner*/
 .bg-banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
@@ -45,7 +44,7 @@
       align-items: center;
 
       @include mobile {
-        align-items: flex-start; /* 讓手機圖片不會延伸，根據螢幕大小等比例縮小 Ｖ */
+        /* 讓手機圖片不會延伸，根據螢幕大小等比例縮小 Ｖ */
         position: absolute;
         top: 50%;
         left: 50%;

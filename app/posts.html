@@ -59,7 +59,7 @@ current: index
       <h2 class="text-sm-danger fz-4 fz-md-6 fz-sm-9">情人特別企劃</h2>
       <div class="flex justify-between align-center | mb-7 mb-sm-6">
         <h3 class="fz-7 fz-md-11 fz-sm-12">2020 Valentine’s Special</h3>
-        <span class="text-400 | fz-md-12">2020/02/14</span>
+        <p class="text-400 | fz-md-12">2020/02/14</p>
       </div>
       <ul>
         <li class="article__content mb-12 mb-md-7">
@@ -119,6 +119,7 @@ current: index
         </li>
       </ul>
       <div class="article__footer">
+            <!-- pc mobile only -->
         <div class="flex bd-b-300 mb-7 mb-md-4 pb-6 pb-sm-4">
           <p class="mr-6">Share</p>
           <ul class="flex">
@@ -141,14 +142,21 @@ current: index
         <div class="flex justify-between flex-sm-column justify-sm-start">
           <div class="article__next">
             <a href="#" class="article__link text-black flex align-center">
-              <i class="mr-4 fz-11 fas fa-arrow-left"></i>
-              <p>上一篇：街頭潮人訪問 1</p>
+              <span class="material-icons-outlined mr-4">
+                arrow_back
+                </span>
+              上一篇：街頭潮人訪問 1
             </a>
           </div>
           <div class="article__last">
             <a href="#" class="article__link text-black flex align-center">
-              <i class="mr-4 fz-11 fas fa-arrow-right"></i>
-              <p>下一篇：街頭潮人訪問 2</p>
+              <span class="material-icons-outlined mr-4 no-display sm-display">
+                arrow_forward
+                </span>
+              下一篇：街頭潮人訪問 2
+              <span class="material-icons-outlined ml-4 sm-no-display">
+                arrow_forward
+                </span>
             </a>
           </div>
         </div>
@@ -187,6 +195,7 @@ current: index
       </div>
     </div>
   </div>
+   <!-- pad mobile only -->
   <div class="container article__footer__md mb-md-18">
     <div class="flex bd-b-300 mb-7 mb-md-4 pb-6">
       <p class="mr-6">Share</p>
@@ -210,14 +219,18 @@ current: index
     <div class="flex justify-between flex-sm-column justify-sm-start">
       <div class="article__next">
         <a href="#" class="article__link text-black flex align-center">
-          <i class="mr-4 fz-11 fas fa-arrow-left"></i>
-          <p>上一篇：街頭潮人訪問 1</p>
+          <span class="material-icons-outlined mr-4">
+            arrow_back
+            </span>
+          上一篇：街頭潮人訪問 1
         </a>
       </div>
       <div class="article__last">
         <a href="#" class="article__link text-black flex align-center">
-          <i class="mr-4 fz-11 fas fa-arrow-right"></i>
-          <p>下一篇：街頭潮人訪問 2</p>
+          下一篇：街頭潮人訪問 2
+          <span class="material-icons-outlined ml-4">
+            arrow_forward
+            </span>
         </a>
       </div>
     </div>

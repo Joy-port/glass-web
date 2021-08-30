@@ -13,11 +13,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 96px;
+      border-bottom: 4px solid transparent;
+
 
       &:hover {
         border-bottom: 4px solid $primary;
-        padding-bottom: -4px;
         opacity: 1;
       }
 

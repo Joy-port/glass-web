@@ -33,6 +33,10 @@
     @include pad {
       display: block;
       width: 47%;
+      height: 164px;
+      object-fit: cover;
+      object-position: center;
+
     }
 
     @include mobile {
